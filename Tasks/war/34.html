@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Hello App Engine</title>
+ </head>
+<script src="jquery-2.1.0.min.js"></script>
+<script>  
+$( function() {    
+	/** $('#calc').click( function() { var var1 = $('#var1').val(); 
+	var var2 = $('#var2').val(); 
+	var operation = $('#operation').val(); 
+	
+	$('#result').load( "first?var1="+var1+"&var2="+var2+"&operation="+operation); 
+	} ); 
+	**/
+	$('#calc').click( function() { 
+	
+	$('#result').load("fourth?"); 
+	} ); 
+} );
+</script>
+ 
+  <body>
+<p>Press button and i will make 5 lines 8 rows array from -99 to 99</p>
+<br>
+<p>Then i will find maximum one:</p>
+
+<button id="calc">Array</button>
+<p>Operation result: <b><span style="color:red" 
+id="result"></span></b></p>
+
+  </body>
+</html>
